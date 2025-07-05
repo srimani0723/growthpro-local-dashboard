@@ -8,7 +8,7 @@ function Dashboard() {
   return (
       <>
         <Header />
-        <section className='flex flex-col justify-center items-center bg-linear-45 from-purple-50 to-sky-50 min-h-[90vh] p-4 md:flex-row md:items-start pt-[15vh]'>
+        <section className='flex flex-col justify-center items-center bg-linear-45 from-purple-50 to-sky-50 min-h-[90vh] md:flex-row md:items-start pt-[15vh]'>
         <InputForm />
         <DisplayCard/>
         </section>

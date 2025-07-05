@@ -63,7 +63,7 @@ function DisplayCard() {
   
   // This is the main Card that shows the data fetched from backend
   const DataView = () => (
-      <section className={`animate-fadeSlideUpborder border-gray-200 bg-white rounded-2xl p-3 m-3 shadow-2xl/5 w-[95%] max-w-[600px] transition-all duration-700 ease-in-out
+      <section className={`animate-fadeSlideUpborder border border-gray-200 bg-white rounded-2xl p-3 m-3 shadow-2xl/5 w-[95%] max-w-[600px] transition-all duration-700 ease-in-out 
       `}>
         {/* given input */}
         <section className='border-b border-gray-100 p-3 text-center'>
@@ -98,7 +98,10 @@ function DisplayCard() {
 
         
         {isFetching && (
-            <div className="text-sm bg-violet-500 animate-pulse italic w-full h-[20px] my-2 rounded-lg"></div>
+          <>
+            <div className="text-sm bg-violet-500 animate-pulse italic w-full h-[5px] my-2 rounded-lg"></div>
+            <div className="text-sm bg-violet-400 animate-pulse italic w-full h-[5px] rounded-lg"></div>
+          </>
           )}
 
         {/* Used Framer-Motion for animation effect */}

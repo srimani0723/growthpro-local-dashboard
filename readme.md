@@ -90,8 +90,8 @@ Client will run at http://localhost:3000
 
 
 ## 🌐 Live Demo (Optional)
-- Frontend: Vercel Link Here
-- Backend: Render Link Here
+- Frontend: [Vercel Link Here](https://growthpro-local-dashboard.vercel.app/)
+- Backend: [Render Link Here](https://growthpro-local-dashboard.onrender.com/)
 
 
 

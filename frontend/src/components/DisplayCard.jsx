@@ -98,10 +98,7 @@ function DisplayCard() {
 
         
         {isFetching && (
-          <>
             <div className="text-sm bg-violet-500 animate-pulse italic w-full h-[20px] my-2 rounded-lg"></div>
-            <div className="text-sm bg-violet-400 animate-pulse italic w-full h-[20px] rounded-lg"></div>
-            </>
           )}
 
         {/* Used Framer-Motion for animation effect */}

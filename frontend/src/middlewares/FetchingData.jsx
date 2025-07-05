@@ -10,12 +10,10 @@ import axios from "axios"
 const PostBusinessDetails = () => {
     return useMutation({
         // this function runs the promise that runs post method
-        mutationFn: async (name, location) => {
+        mutationFn: async (obj) => {
             await new Promise((resolve) => setTimeout(resolve, 1000));
-            const body = {
-                name,
-                location
-            }
+            
+            const body = obj
             const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/business-data`, body)
 
             if (response.data.error) {
@@ -37,7 +35,9 @@ const GenerateHeadline = (name,location) => {
         queryKey: ["headline",name,location],
         queryFn: async () => {
             await new Promise((resolve) => setTimeout(resolve, 1000));
-            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/regenerate-headline?name=${name}&location=${location}`)
+            
+            const params = new URLSearchParams({name,location})
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/regenerate-headline?${params.toString()}`)
             
             return response.data
         },

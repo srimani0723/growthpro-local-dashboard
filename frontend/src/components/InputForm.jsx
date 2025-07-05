@@ -19,7 +19,7 @@ function InputForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         // set the name & location values in the context 
-        postDetails(name, location)
+        postDetails({name, location})
     }
 
     useEffect(() => {

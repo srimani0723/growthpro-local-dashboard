@@ -25,8 +25,9 @@ A sleek, responsive full-stack web application that simulates how small business
 
 ## 📷 Preview
 
-> _Include a screenshot here_  
-_(Paste or drag an image named `screenshot.png` into this repo and update the Markdown)_
+![Screenshot 2025-07-05 193053](https://github.com/user-attachments/assets/19041c3b-0039-489e-96a7-ec618c171cc1)
+![Screenshot 2025-07-05 193124](https://github.com/user-attachments/assets/1a1427b2-b699-498d-993a-e60911999552)
+
 
 ---
 
